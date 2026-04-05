@@ -63,7 +63,7 @@ export default function ServicesPage() {
               Our Services
             </p>
 
-            <h1 className="mt-6 text-4xl font-bold leading-[0.95] tracking-[-0.03em] text-[#001b63] sm:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="mt-6 text-4xl font-bold leading-[0.95] tracking-[-0.03em] text-[var(--brand-primary)] sm:text-5xl lg:text-6xl xl:text-7xl">
               Strategic services
               <br />
               built for{" "}
@@ -83,7 +83,7 @@ export default function ServicesPage() {
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-xl bg-[#001b63] px-7 py-4 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(0,27,99,0.18)] transition hover:bg-[#001552]"
+                className="inline-flex items-center justify-center rounded-xl bg-[var(--brand-primary)] px-7 py-4 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(0,27,99,0.18)] transition hover:bg-[#001552]"
               >
                 Get a Free Consultation
               </Link>
@@ -100,7 +100,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="absolute -bottom-6 left-4 rounded-[22px] border border-[#0c7f8c] bg-white px-6 py-5 shadow-[0_14px_30px_rgba(15,23,42,0.14)] sm:left-6">
-              <p className="text-4xl font-bold text-[#001b63]">3x</p>
+              <p className="text-4xl font-bold text-[var(--brand-primary)]">3x</p>
               <p className="mt-2 text-sm leading-6 text-[#33456f]">
                 faster clarity on
                 <br />
@@ -117,7 +117,7 @@ export default function ServicesPage() {
             What We Offer
           </p>
 
-          <h2 className="mx-auto mt-6 max-w-4xl text-3xl font-bold leading-tight tracking-[-0.03em] text-[#001b63] sm:text-4xl lg:text-5xl">
+          <h2 className="mx-auto mt-6 max-w-4xl text-3xl font-bold leading-tight tracking-[-0.03em] text-[var(--brand-primary)] sm:text-4xl lg:text-5xl">
             Focused services that help businesses compete, convert, and scale.
           </h2>
 
@@ -137,11 +137,11 @@ export default function ServicesPage() {
                 key={card.title}
                 className="rounded-[28px] bg-white p-8 shadow-sm"
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ece9f0] text-xl text-[#001b63]">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ece9f0] text-xl text-[var(--brand-primary)]">
                   {card.icon}
                 </div>
 
-                <h3 className="mt-8 text-2xl font-semibold text-[#001b63]">
+                <h3 className="mt-8 text-2xl font-semibold text-[var(--brand-primary)]">
                   {card.title}
                 </h3>
 
@@ -158,7 +158,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="grid gap-14 xl:grid-cols-[0.88fr_1.12fr] xl:items-start">
             <div className="max-w-xl">
-              <h2 className="text-4xl font-bold leading-tight tracking-[-0.03em] text-[#001b63] sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-tight tracking-[-0.03em] text-[var(--brand-primary)] sm:text-5xl">
                 How our service process works.
               </h2>
 
@@ -175,7 +175,7 @@ export default function ServicesPage() {
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-semibold text-[#001b63]">
+                      <h3 className="text-xl font-semibold text-[var(--brand-primary)]">
                         {item.title}
                       </h3>
                       <p className="mt-2 text-base leading-8 text-[#33456f]">
@@ -190,7 +190,7 @@ export default function ServicesPage() {
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="min-h-[240px] rounded-[28px] bg-[#ece9f0] p-8 shadow-sm">
                 <div className="flex h-full flex-col justify-end">
-                  <p className="text-5xl font-bold text-[#001b63]">SEO</p>
+                  <p className="text-5xl font-bold text-[var(--brand-primary)]">SEO</p>
                   <p className="mt-3 text-base text-[#33456f]">
                     Organic visibility that compounds over time
                   </p>
@@ -219,7 +219,7 @@ export default function ServicesPage() {
               </div>
 
               <div className="min-h-[240px] rounded-[28px] bg-[#ece9f0] p-8 shadow-sm">
-                <p className="text-5xl font-bold text-[#001b63]">360°</p>
+                <p className="text-5xl font-bold text-[var(--brand-primary)]">360°</p>
                 <p className="mt-3 text-base text-[#33456f]">
                   Digital support across search, ads, content, and social media
                 </p>
@@ -233,7 +233,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
             <div className="max-w-2xl">
-              <h2 className="text-4xl font-bold leading-tight tracking-[-0.03em] text-[#001b63] sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-tight tracking-[-0.03em] text-[var(--brand-primary)] sm:text-5xl">
                 Why businesses choose our services.
               </h2>
 
@@ -246,7 +246,7 @@ export default function ServicesPage() {
             <div>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-xl border border-[#b9c1d1] bg-transparent px-7 py-4 text-sm font-semibold text-[#001b63] transition hover:bg-white"
+                className="inline-flex items-center justify-center rounded-xl border border-[#b9c1d1] bg-transparent px-7 py-4 text-sm font-semibold text-[var(--brand-primary)] transition hover:bg-white"
               >
                 Discuss Your Requirements
               </Link>
@@ -259,11 +259,11 @@ export default function ServicesPage() {
                 key={item.title}
                 className="rounded-[28px] bg-white p-8 shadow-sm"
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ece9f0] text-xl text-[#001b63]">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ece9f0] text-xl text-[var(--brand-primary)]">
                   ✦
                 </div>
 
-                <h3 className="mt-8 text-2xl font-semibold text-[#001b63]">
+                <h3 className="mt-8 text-2xl font-semibold text-[var(--brand-primary)]">
                   {item.title}
                 </h3>
 
@@ -277,7 +277,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="px-5 pb-24 pt-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-5xl rounded-[36px] bg-[#001b63] px-8 py-16 text-center text-white shadow-[0_16px_40px_rgba(0,27,99,0.18)] sm:px-12 sm:py-20">
+        <div className="mx-auto max-w-5xl rounded-[36px] bg-[var(--brand-primary)] px-8 py-16 text-center text-white shadow-[0_16px_40px_rgba(0,27,99,0.18)] sm:px-12 sm:py-20">
           <h2 className="mx-auto max-w-3xl text-4xl font-bold leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
             Ready to choose the right service path for your business?
           </h2>
@@ -285,7 +285,7 @@ export default function ServicesPage() {
           <div className="mt-10">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-[#12d4da] px-8 py-4 text-sm font-semibold text-[#001b63] transition hover:bg-[#32dde2]"
+              className="inline-flex items-center justify-center rounded-xl bg-[#12d4da] px-8 py-4 text-sm font-semibold text-[var(--brand-primary)] transition hover:bg-[#32dde2]"
             >
               Start Your Growth Story
             </Link>

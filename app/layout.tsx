@@ -39,8 +39,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "OptiVir Ads",
-  description: "Digital marketing agency website",
+  title: "OptiVir Ads | Best digital marketing agency in kerala",
+  description: "Best digital marketing agency in kerala",
 };
 
 export default function RootLayout({

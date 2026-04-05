@@ -301,7 +301,7 @@ function StorySection() {
 function CTASection() {
   return (
     <section className="px-5 pb-20 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-4xl rounded-[28px] bg-[#001b63] px-6 py-12 text-center text-white shadow-sm sm:px-10 sm:py-14">
+      <div className="mx-auto max-w-4xl rounded-[28px] bg-[var(--brand-primary)] px-6 py-12 text-center text-white shadow-sm sm:px-10 sm:py-14">
         <h2 className="mx-auto max-w-2xl text-3xl font-bold leading-tight sm:text-4xl">
           Ready to scale your business in the digital landscape?
         </h2>

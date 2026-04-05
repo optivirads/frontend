@@ -37,7 +37,7 @@ type ContactPageProps = {
 
 const ui = {
   primaryButton:
-    "inline-flex items-center justify-center rounded-xl bg-[#001b63] px-7 py-4 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(0,27,99,0.18)] transition hover:bg-[#001552]",
+    "inline-flex items-center justify-center rounded-xl bg-[var(--brand-primary)] px-7 py-4 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(0,27,99,0.18)] transition hover:bg-[#001552]",
 };
 
 export default async function ContactPage({ searchParams }: ContactPageProps) {
@@ -54,7 +54,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               Get In Touch
             </p>
 
-            <h1 className="mt-6 text-4xl font-bold leading-[0.95] tracking-[-0.03em] text-[#001b63] sm:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="mt-6 text-4xl font-bold leading-[0.95] tracking-[-0.03em] text-[var(--brand-primary)] sm:text-5xl lg:text-6xl xl:text-7xl">
               Let&apos;s build your
               <br />
               next chapter of
@@ -76,10 +76,10 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-[#001b63]">
+                    <h3 className="text-xl font-semibold text-[var(--brand-primary)]">
                       {item.title}
                     </h3>
-                    <p className="mt-1 text-base font-medium text-[#001b63]">
+                    <p className="mt-1 text-base font-medium text-[var(--brand-primary)]">
                       {item.text}
                     </p>
                     <p className="mt-1 text-sm leading-7 text-[#33456f]">
@@ -101,7 +101,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
             What To Expect
           </p>
 
-          <h2 className="mx-auto mt-6 max-w-4xl text-3xl font-bold leading-tight tracking-[-0.03em] text-[#001b63] sm:text-4xl lg:text-5xl">
+          <h2 className="mx-auto mt-6 max-w-4xl text-3xl font-bold leading-tight tracking-[-0.03em] text-[var(--brand-primary)] sm:text-4xl lg:text-5xl">
             A focused conversation built around your business goals.
           </h2>
 
@@ -117,7 +117,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <div className="grid gap-14 xl:grid-cols-[0.88fr_1.12fr] xl:items-start">
             <div className="max-w-xl">
-              <h2 className="text-4xl font-bold leading-tight tracking-[-0.03em] text-[#001b63] sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-tight tracking-[-0.03em] text-[var(--brand-primary)] sm:text-5xl">
                 Working with us starts with clarity.
               </h2>
 
@@ -129,7 +129,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               <div className="mt-10 space-y-5">
                 {expectations.map((item) => (
                   <div key={item} className="flex items-start gap-4">
-                    <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-[#001b63] text-sm text-white">
+                    <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-[var(--brand-primary)] text-sm text-white">
                       ✓
                     </div>
                     <p className="text-base leading-8 text-[#33456f]">{item}</p>
@@ -141,7 +141,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="min-h-[240px] rounded-[28px] bg-[#ece9f0] p-8 shadow-sm">
                 <div className="flex h-full flex-col justify-end">
-                  <p className="text-5xl font-bold text-[#001b63]">24h</p>
+                  <p className="text-5xl font-bold text-[var(--brand-primary)]">24h</p>
                   <p className="mt-3 text-base text-[#33456f]">
                     Typical response window
                   </p>
@@ -170,7 +170,7 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               </div>
 
               <div className="min-h-[240px] rounded-[28px] bg-[#ece9f0] p-8 shadow-sm">
-                <p className="text-5xl font-bold text-[#001b63]">1:1</p>
+                <p className="text-5xl font-bold text-[var(--brand-primary)]">1:1</p>
                 <p className="mt-3 text-base text-[#33456f]">
                   Dedicated discussion for your business
                 </p>
@@ -321,7 +321,7 @@ function FormField({
 }) {
   return (
     <div>
-      <label htmlFor={id} className="text-sm font-semibold text-[#001b63]">
+      <label htmlFor={id} className="text-sm font-semibold text-[var(--brand-primary)]">
         {label}
       </label>
       <input
@@ -334,7 +334,7 @@ function FormField({
         maxLength={maxLength}
         pattern={pattern}
         title={title}
-        className="mt-2 h-14 w-full rounded-xl border border-[#d9dfea] bg-[#f8f9fc] px-4 text-sm text-[#001b63] outline-none transition focus:border-[#0c7f8c]"
+        className="mt-2 h-14 w-full rounded-xl border border-[#d9dfea] bg-[#f8f9fc] px-4 text-sm text-[var(--brand-primary)] outline-none transition focus:border-[#0c7f8c]"
       />
     </div>
   );
@@ -361,7 +361,7 @@ function TextAreaField({
 }) {
   return (
     <div>
-      <label htmlFor={id} className="text-sm font-semibold text-[#001b63]">
+      <label htmlFor={id} className="text-sm font-semibold text-[var(--brand-primary)]">
         {label}
       </label>
       <textarea
@@ -372,7 +372,7 @@ function TextAreaField({
         required={required}
         minLength={minLength}
         maxLength={maxLength}
-        className="mt-2 w-full rounded-xl border border-[#d9dfea] bg-[#f8f9fc] px-4 py-4 text-sm leading-7 text-[#001b63] outline-none transition focus:border-[#0c7f8c]"
+        className="mt-2 w-full rounded-xl border border-[#d9dfea] bg-[#f8f9fc] px-4 py-4 text-sm leading-7 text-[var(--brand-primary)] outline-none transition focus:border-[#0c7f8c]"
       />
     </div>
   );
